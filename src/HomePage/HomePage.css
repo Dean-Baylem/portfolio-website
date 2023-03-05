@@ -1,0 +1,30 @@
+.home-page {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../public/images/background-pic.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height: 100vh;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.title-div {
+    position: relative;
+    top: 40vh;
+}
+
+
+.title h1 {
+    margin: 0;
+    font-size: 4.5rem;
+}
+
+.home-list { 
+    list-style-type: none;
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    padding: 0% 10%;
+    font-size: 16px;
+}
