@@ -11,9 +11,14 @@ const AboutTextBox = props => {
           <h5>{props.subtitle}</h5>
         </div>
         <div>
-          {props.body.split("\n").map((text) => (
-            <p>{text}</p>
-          ))}
+          {props.body === "image" ? (
+            <img 
+              src="https://img.freepik.com/free-vector/people-ask-question_102902-2341.jpg?w=740&t=st=1678067967~exp=1678068567~hmac=dae68e2813a69b66998b329040bd77032bc8b172532a2ef7f0a0fec30347546a"
+              alt="about-me"
+            />
+          ) : (
+            props.body.split("\n").map((text) => <p>{text}</p>)
+          )}
           <div className="skill-list">
             {props.skills.map((skill, index) => (
               <SkillTag key={index} skill={skill} />
