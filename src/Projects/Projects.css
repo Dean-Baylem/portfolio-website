@@ -3,5 +3,37 @@
 }
 
 .project-body-img img {
-    width: 75%;
+    height: 60vh;
+}
+
+.project-card {
+    min-width: -webkit-fill-available;
+    height: 25vh;
+}
+
+.project-card img {
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+}
+
+.projects-box-js {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2% 15% 0% 15%;
+}
+
+.projects-box-python {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2% 15% 0% 15%;
+}
+
+.projects-nav-btn-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2% 10%;
+}
+
+.project-card:hover {
+    filter: brightness(80%);
 }

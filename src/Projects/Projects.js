@@ -3,6 +3,7 @@ import PageTemplate from "../PageTemplate/PageTemplate";
 import ProjectHeading from "./ProjectHeading";
 import ProjectSwitchBoard from "./ProjectSwitchboard";
 import "./Projects.css";
+import ProjectCard from "./ProjectCard";
 
 const Projects = props => {
 
@@ -108,18 +109,26 @@ const Projects = props => {
           title="Projects"
           subtitle="A small collection of projects. Click to see more"
         />
+        <hr></hr>
         <ProjectSwitchBoard
           handleClick={handleClick}
           projectLanguage={projectLanguage}
         />
-        {projectSelected === false ? (
-          <div className="project-body-img">
-            <img src="https://img.freepik.com/free-vector/set-scenes-people-video-conference_24877-62802.jpg?w=996&t=st=1678102688~exp=1678103288~hmac=0af3cb469a3d35317bbd56d2f4ae6ef7d5adde1177334bdc26e0c60a14ebf2e0" alt="work-img" />
+        <div>
+          {projectSelected === false ? (
+            <div className="project-body-img">
+              <img
+                src="https://img.freepik.com/free-vector/set-scenes-people-video-conference_24877-62802.jpg?w=996&t=st=1678102688~exp=1678103288~hmac=0af3cb469a3d35317bbd56d2f4ae6ef7d5adde1177334bdc26e0c60a14ebf2e0"
+                alt="work-img"
+              />
+            </div>
+          ) : null}
+          <div className={projectLanguage === "Javascript" ? "projects-box-js" : "projects-box-python"}>
+            {currentProjects.map((project) => (
+              <ProjectCard src={project.coverImg} />
+            ))}
           </div>
-        ) : null}
-        {currentProjects.map((project) => (
-          <p>{project.name}</p>
-        ))}
+        </div>
       </PageTemplate>
     );
 }
