@@ -1,3 +1,7 @@
+.about-image {
+    width: 80%;
+}
+
 .about-text-box {
     padding: 0% 10% 0% 5%;
 }
@@ -27,6 +31,8 @@
     grid-template-columns: repeat(3, 1fr);
     padding: 2%;
 }
+
+
 
 .about-nav-btn {
     font-family: 'Open Sans', sans-serif;
@@ -66,3 +72,22 @@
     font-weight: 300;
     font-style: italic;
 }
+
+.about-image-box {
+    text-align: center;
+}
+
+.about-image-box p {
+    text-align: left;
+}
+
+.about-image-box .skill-text {
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .image-section {
+        display: none;
+    }
+}
+
