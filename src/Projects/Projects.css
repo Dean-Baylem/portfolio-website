@@ -14,17 +14,22 @@
 .project-card img {
     height: -webkit-fill-available;
     width: -webkit-fill-available;
+    box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 1px 1px;
 }
 
 .projects-box-js {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    column-gap: 1%;
+    row-gap: 1%;
     margin: 2% 15% 0% 15%;
 }
 
 .projects-box-python {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 1%;
+    row-gap: 1%;
     margin: 2% 15% 0% 15%;
 }
 
@@ -36,4 +41,24 @@
 
 .project-card:hover {
     filter: brightness(80%);
+    box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 1px 1px;
+}
+
+.modal-button-box {
+    display: grid;
+    padding-top: 2%;
+}
+
+.live {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.not-live {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.modal-button-box a {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
 }

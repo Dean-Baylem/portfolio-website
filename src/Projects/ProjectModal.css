@@ -1,0 +1,47 @@
+.project-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.project-modal-box {
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+}
+
+.project-modal-title {
+    font-size: 1.75rem;
+    text-align: center;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.project-modal-title h4 {
+    margin-bottom: 0;
+}
+
+
+.modal-img {
+    width: 400px;
+    height: 400px;
+    padding: 2%;
+}
+
+.modal-project-images {
+    text-align: center;
+}
+
+.project-modal-box {
+    margin: 0% 10% 0% 10%;
+}
+
+.project-modal-body {
+    padding: 0% 10% 0% 10%;
+}
