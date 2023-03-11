@@ -8,22 +8,27 @@
 
 .skill-list {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1%;
+    row-gap: 4%;
     text-align: center;
 }
 
 .skill-tag {
     display: grid;
-    padding: 0 2%;
-    margin: 1%;
-    font-weight: 100;
-    font-size: 14px;
-    color: #fff;
-    background: linear-gradient(90deg, #91b9e0 0%, #ed91f2 100%);
-    border: 2px solid #0066cc;
-    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
-    border-radius: 15px;
+    padding: 0 1%;
+    color: #000;
+    background: #00000000;
+    border: solid 1px #00000000;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 10px;
     align-items: center;
+}
+
+.skill-text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .nav-btn-div {
@@ -91,3 +96,35 @@
     }
 }
 
+@media screen and (min-width: 1600px) {
+    .skill-list {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .skill-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .page-title h1 {
+        font-size: 3rem;
+    }
+    .about-header h2 {
+        font-size: 2rem;
+    }
+    .about-subtitle h5 {
+        font-size: 1rem;
+    }
+    .about-image-box p {
+        font-size: 12px;
+
+    }
+    .about-nav-btn {
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 5px 0px;
+    }
+    .nav-btn-div {
+        grid-template-columns: 1fr;
+        row-gap: 5%;
+        padding: 2%
+    }
+}

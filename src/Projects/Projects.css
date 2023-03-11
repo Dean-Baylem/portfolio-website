@@ -33,6 +33,24 @@
     margin: 2% 15% 0% 15%;
 }
 
+@media screen and (max-width: 1200px) {
+    .projects-box-python {
+        margin: 2% 10% 0% 10%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .projects-box-python {
+        grid-template-columns: 1fr;
+        padding: 1% 10% 2% 10%;
+        row-gap: 2%;
+    }
+    .projects-box-js {
+        grid-template-columns: 1fr;
+        padding: 1% 10% 2% 10%;
+    }
+}
+
 .projects-nav-btn-div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
