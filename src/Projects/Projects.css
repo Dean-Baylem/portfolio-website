@@ -49,6 +49,13 @@
         grid-template-columns: 1fr;
         padding: 1% 10% 2% 10%;
     }
+    .page-subtitle {
+        padding: 0% 10%;
+    }
+    .page-title h2 {
+        font-size: 3rem;
+        padding-left: 5%;
+    }
 }
 
 .projects-nav-btn-div {

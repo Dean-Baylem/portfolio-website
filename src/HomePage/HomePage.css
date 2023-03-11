@@ -30,6 +30,22 @@
     font-size: 24px;
 }
 
+@media screen and (max-width: 600px) {
+    .home-list {
+        grid-template-columns: 1fr;
+        row-gap: 50%;
+    }
+    .title-div {
+        top: 30vh;
+    }
+    .title h1 {
+        font-size: 3.5rem;
+    }
+    .subtitle {
+        font-size: 1rem;
+    }
+}
+
 .home-list a {
     text-decoration: none;
     color: #FFFFFF;

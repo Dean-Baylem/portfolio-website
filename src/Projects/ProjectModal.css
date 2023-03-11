@@ -45,3 +45,21 @@
 .project-modal-body {
     padding: 0% 10% 0% 10%;
 }
+
+@media screen and (max-width: 750px) {
+    .modal-img {
+        height: 200px;
+        width: 200px;
+    }
+    .project-modal-body p {
+        font-size: 14px;
+    }
+    .live {
+        grid-template-columns: 1fr;
+        row-gap: 10%;
+    }
+    .project-modal-box {
+        height: auto;
+        padding-bottom: 10%;
+    }
+}

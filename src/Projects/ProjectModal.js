@@ -21,11 +21,6 @@ const ProjectModal = props => {
                 <img
                   className="modal-img"
                   alt={props.project.name}
-                  src={"images/" + props.project.coverImg}
-                />
-                <img
-                  className="modal-img"
-                  alt={props.project.name}
                   src={"images/" + props.project.modalImgs}
                 />
               </div>
