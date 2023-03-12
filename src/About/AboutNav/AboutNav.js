@@ -1,8 +1,12 @@
 import React from "react";
 import NavButton from "../../NavBar/NavButton";
+import PageHeading from "../../PageTemplate/PageHeading";
 import Title from "../../Titles/Title";
 
 const AboutNav = props => {
+
+  const heading = "All About Me";
+  const subtitle = "Discover Dean: A brief look into my; personal, educational and employment history.";
 
   const backgroundDetails = {
     title: "Background",
@@ -39,8 +43,7 @@ const AboutNav = props => {
 
     return (
       <div>
-        <Title text="All About Me" type="page-title" />
-        <hr></hr>
+      <PageHeading heading={heading}/>
         <div className="nav-btn-div">
           <NavButton
             type="about-nav-btn"

@@ -1,7 +1,7 @@
 .contact-form{
     display: grid;
     grid-template-columns: 1fr;
-    padding:10%;
+    padding: 2% 10%;
 }
 
 .contact-form-label {
@@ -29,9 +29,4 @@
 
 textarea {
     resize: none;
-}
-
-.contact-heading {
-    padding-left: 10%;
-    padding-right: 10%;
 }

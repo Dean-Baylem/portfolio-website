@@ -1,10 +1,10 @@
 import React, {useState} from "react";
 import PageTemplate from "../PageTemplate/PageTemplate";
-import ProjectHeading from "./ProjectHeading";
 import ProjectSwitchBoard from "./ProjectSwitchboard";
 import "./Projects.css";
 import ProjectCard from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
+import PageHeading from "../PageTemplate/PageHeading";
 
 const Projects = props => {
 
@@ -13,6 +13,8 @@ const Projects = props => {
     const [projectSelected, setProjectSelected] = useState(false);
     const [showModal, setShowModal] = useState(false);
     const [modalProject, setModalProject] = useState({});
+    const heading = "Projects";
+    const subtitle = "A small collection of personal projects. Please click to see; more details, github location and live use if deployed."
 
     const [allJSProjects] = useState([
       {
@@ -130,11 +132,7 @@ const Projects = props => {
     return (
       <PageTemplate navLocations={navbarLinks} src="images/project-img.jpg">
       {showModal && <ProjectModal close={modalToggle} project={modalProject} />}
-        <ProjectHeading
-          title="Projects"
-          subtitle="A small collection of projects. Click to see more"
-        />
-        <hr></hr>
+      <PageHeading heading={heading} subtitle={subtitle} />
         <ProjectSwitchBoard
           handleClick={handleClick}
           projectLanguage={projectLanguage}

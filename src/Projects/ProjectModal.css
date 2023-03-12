@@ -12,8 +12,6 @@
 }
 
 .project-modal-box {
-    width: 80%;
-    height: 80%;
     background-color: #fff;
 }
 
@@ -43,7 +41,7 @@
 }
 
 .project-modal-body {
-    padding: 0% 10% 0% 10%;
+    padding: 0% 10% 5% 10%;
 }
 
 @media screen and (max-width: 750px) {
