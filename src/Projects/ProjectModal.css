@@ -56,6 +56,10 @@
         grid-template-columns: 1fr;
         row-gap: 10%;
     }
+    .not-live {
+        grid-template-columns: 1fr;
+        row-gap: 10%;
+    }
     .project-modal-box {
         height: auto;
         padding-bottom: 10%;

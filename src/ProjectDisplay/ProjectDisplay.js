@@ -7,6 +7,7 @@ import ProjectDetails from "./ProjectDetails";
 import NavBar from "../NavBar/NavBar";
 import ProjectTools from "./ProjectTools";
 import ProjectLinks from "./ProjectLinks";
+import Footer from "../Footer/Footer";
 
 const ProjectDisplay = props => {
 
@@ -30,6 +31,7 @@ const ProjectDisplay = props => {
         />
         <ProjectTools project={project} />
         <ProjectLinks project={project} />
+        <Footer language={props.language}/>
       </React.Fragment>
     );
 }

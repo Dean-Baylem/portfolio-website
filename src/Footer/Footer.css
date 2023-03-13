@@ -1,5 +1,6 @@
 footer {
-    position: absolute;
+    margin-top: 20%;
+    padding-bottom: 10%;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -39,4 +40,13 @@ footer {
 .footer-name h5 {
     font-family: "Spartan League", sans-serif;
     font-size: 14px;
+}
+
+@media screen and (max-width: 750px) {
+    .footer-box {
+        grid-template-columns: 1fr;
+    }
+    .footer-socials {
+        text-align: center;
+    }
 }

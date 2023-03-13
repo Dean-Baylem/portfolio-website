@@ -52,6 +52,9 @@
     .page-subtitle {
         padding: 0% 10%;
     }
+    .project-body-img img {
+        height: 40vh;
+    }
 }
 
 .projects-nav-btn-div {
