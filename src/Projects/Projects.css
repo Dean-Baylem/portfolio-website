@@ -71,11 +71,12 @@
 }
 
 .live {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10%;
 }
 
 .not-live {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .modal-button-box a {

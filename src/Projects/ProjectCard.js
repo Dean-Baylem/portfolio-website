@@ -12,6 +12,7 @@ const ProjectCard = props => {
             desc: props.desc,
             github: props.github,
             live: props.live,
+            id: props.id
         }
         props.onClick(project)
     }

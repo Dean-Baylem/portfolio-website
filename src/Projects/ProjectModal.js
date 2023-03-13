@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./ProjectModal.css";
 
 const ProjectModal = props => {
@@ -31,6 +32,7 @@ const ProjectModal = props => {
                   <a className="about-nav-btn" href={props.project.link}>See Live</a>
                 )}
                 <a className="about-nav-btn" href={props.project.github}>Github</a>
+                <NavLink className="about-nav-btn" to={"/project-details/" + props.project.id}>More Details</NavLink>
                 <button onClick={handleClick} className="about-nav-btn">
                   Close
                 </button>

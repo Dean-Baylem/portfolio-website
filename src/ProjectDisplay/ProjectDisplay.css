@@ -1,0 +1,40 @@
+section {
+    padding: 0% 10%;
+}
+
+.project-details-content {
+    padding-top: 2%;
+}
+
+.subheading {
+    font-size: 1.4rem;
+}
+
+.project-details-content {
+    text-align: -webkit-center;
+}
+
+.project-img-display {
+    height: 40vh;
+}
+
+@media screen and (max-width: 750px) {
+    .project-img-display {
+        height: 25vh;
+    }
+}
+
+.project-img-body {
+    max-width: -webkit-fill-available;
+    height: 100%;
+}
+
+.project-text {
+    text-align: left;
+}
+
+.link-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}

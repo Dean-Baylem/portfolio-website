@@ -8,7 +8,8 @@ const PageHeading = props => {
         <div className="page-title">
           <h2>{props.heading}</h2>
         </div>
-        {props.subtitle &&<p>{props.subtitle}</p>}
+        {props.subtitle && <p>{props.subtitle}</p>}
+        {props.github && <a href={props.githubLink}>GitHub</a>}
         <hr></hr>
       </div>
     );
