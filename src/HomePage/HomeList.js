@@ -23,6 +23,9 @@ const HomeList = props => {
           <HomeListItem
             listText={props.language === "English" ? list3Eng : list3JP}
           />
+          <button className="language-btn" onClick={props.changeLanguage}>
+            Eng / JP
+          </button>
         </ul>
       </div>
     );

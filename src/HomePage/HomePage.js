@@ -13,14 +13,17 @@ const HomePage = props => {
     return (
       <div className="home-page">
         <div className="title-div">
-          <Title language={props.language} text={props.language === "English" ? titleEng : titleJP} type="title" />
+          <Title
+            language={props.language}
+            text={props.language === "English" ? titleEng : titleJP}
+            type="title"
+          />
           <Title
             language={props.language}
             text={props.language === "English" ? subtitleEng : subtitleJP}
             type="subtitle"
           />
-          <HomeList language={props.language} />
-          <div><button className="language-btn" onClick={props.changeLanguage}>Eng / JP</button></div>
+          <HomeList changeLanguage={props.changeLanguage} language={props.language} />
         </div>
       </div>
     );

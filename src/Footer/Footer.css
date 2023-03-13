@@ -1,6 +1,6 @@
 footer {
     margin-top: 20%;
-    padding-bottom: 10%;
+    padding-bottom: 2%;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -48,5 +48,18 @@ footer {
     }
     .footer-socials {
         text-align: center;
+        justify-items: center;
     }
+}
+
+.icon {
+    font-size: 2rem;
+    align-self: center;
+    color: #FFF;
+    padding-bottom: 5%;
+}
+
+.icon-link {
+    text-decoration: none;
+    place-self: center;
 }

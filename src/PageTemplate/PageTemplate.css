@@ -2,9 +2,6 @@
     position: relative;
 }
 
-.main-body {
-    padding-bottom: 20%;
-}
 
 .page-layout {
     display: grid;
