@@ -17,8 +17,10 @@ const AboutTextBox = props => {
               alt="about-me"
               className="about-image"
             />
-          ) : (
+          ) : props.language === "English" ? (
             props.body.split("\n").map((text) => <p>{text}</p>)
+          ) : (
+            props.bodyJP.split("\n").map((text) => <p>{text}</p>)
           )}
           <div className="skill-list">
             {props.skills.map((skill, index) => (

@@ -23,8 +23,8 @@ const NavBar = props => {
         {isOpen && <Backdrop onClick={closeDrawer} />}
         <SideDrawer show={isOpen} onClick={closeDrawer}>
           <div className="nav-list-drawer">
-            {navLocations.map((location) => (
-              <NavLink className="nav-item" to={"../" + location}>
+            {navLocations.map((location, index) => (
+              <NavLink key={index} className="nav-item" to={"../" + location}>
                 {location}
               </NavLink>
             ))}
@@ -36,11 +36,14 @@ const NavBar = props => {
             <span className="line-2" />
             <span className="line-3" />
           </div>
-          {navLocations.map((location) => (
-            <NavLink className="nav-item nav-regular" to={"../" + location}>
+          {navLocations.map((location, index) => (
+            <NavLink key={index} className="nav-item nav-regular" to={"../" + location}>
               {location}
             </NavLink>
           ))}
+          <div className="nav-item" onClick={props.changeLanguage}>
+            Eng / Jp
+          </div>
         </div>
       </React.Fragment>
     );

@@ -20,6 +20,7 @@ const HomePage = props => {
             type="subtitle"
           />
           <HomeList language={props.language} />
+          <div><button className="language-btn" onClick={props.changeLanguage}>Eng / JP</button></div>
         </div>
       </div>
     );

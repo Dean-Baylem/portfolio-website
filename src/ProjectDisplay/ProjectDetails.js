@@ -1,6 +1,7 @@
 import React from "react";
 
 const ProjectDetails = props => {
+
     return (
       <section className="project-details-content">
         <div className="project-img-display">
@@ -14,7 +15,7 @@ const ProjectDetails = props => {
           <h4>Project Overview</h4>
         </div>
         <div className="project-text">
-          <p>{props.detailedDesc}</p>
+          {props.detailedDesc.split("\n").map((text, index) => {if (props.em.includes(index)) { return (<strong key={index}><u>{text}</u></strong>)} else {return (<p key={index}>{text}</p>)}})}
         </div>
       </section>
     );

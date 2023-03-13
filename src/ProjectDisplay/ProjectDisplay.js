@@ -16,7 +16,7 @@ const ProjectDisplay = props => {
 
     return (
       <React.Fragment>
-      <NavBar />
+        <NavBar changeLanguage={props.changeLanguage} />
         <PageHeading
           heading={project.name}
           subtitle={project.desc}
@@ -26,6 +26,7 @@ const ProjectDisplay = props => {
         <ProjectDetails
           coverImg={project.coverImg}
           detailedDesc={project.detailedDesc}
+          em={project.em}
         />
         <ProjectTools project={project} />
         <ProjectLinks project={project} />

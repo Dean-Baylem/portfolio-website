@@ -5,6 +5,7 @@ import "./Projects.css";
 import ProjectCard from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
 import PageHeading from "../PageTemplate/PageHeading";
+import Footer from "../Footer/Footer";
 
 const Projects = props => {
 
@@ -39,9 +40,16 @@ const Projects = props => {
     }
 
     return (
-      <PageTemplate navLocations={navbarLinks} src="images/project-img.jpg">
-      {showModal && <ProjectModal close={modalToggle} project={modalProject} />}
-      <PageHeading heading={heading} subtitle={subtitle} />
+      <PageTemplate
+        language={props.language}
+        changeLanguage={props.changeLanguage}
+        navLocations={navbarLinks}
+        src="images/project-img.jpg"
+      >
+        {showModal && (
+          <ProjectModal close={modalToggle} project={modalProject} />
+        )}
+        <PageHeading heading={heading} subtitle={subtitle} />
         <ProjectSwitchBoard
           handleClick={handleClick}
           projectLanguage={projectLanguage}
@@ -55,11 +63,17 @@ const Projects = props => {
               />
             </div>
           ) : null}
-          <div className={projectLanguage === "Javascript" ? "projects-box-js" : "projects-box-python"}>
+          <div
+            className={
+              projectLanguage === "Javascript"
+                ? "projects-box-js"
+                : "projects-box-python"
+            }
+          >
             {currentProjects.map((project) => (
-              <ProjectCard 
-                onClick={modalToggle} 
-                name={project.name} 
+              <ProjectCard
+                onClick={modalToggle}
+                name={project.name}
                 src={project.coverImg}
                 modalImgs={project.modalImg}
                 type={project.type}

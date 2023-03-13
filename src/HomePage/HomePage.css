@@ -51,11 +51,25 @@
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
     border-radius: 5px;
-    padding: 2%;
+    padding: 5%;
     letter-spacing: 1px;
 }
 
 .home-list a:hover {
     background-color: #FFFFFF;
     color: #000000; 
+}
+
+.language-btn {
+    color: #FFFFFF;
+    background-color: #00000000;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 1%;
+    letter-spacing: 1px;
+}
+
+.language-btn:hover {
+    background-color: #FFFFFF;
+    color: #000000;
 }

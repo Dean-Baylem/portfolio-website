@@ -17,8 +17,10 @@ const Contact = props => {
         navLocations={navbarLinks}
         src="https://img.freepik.com/free-photo/flat-lay-retro-telephone-receiver-with-chat-bubbles_23-2148796011.jpg?w=740&t=st=1678319293~exp=1678319893~hmac=1e8a931c06b06ae2c093584c5730662a013dc8694268e2aef5a83d6306b963b1"
         alt="Contact-Me!"
+        changeLanguage={props.changeLanguage}
+        language={props.language}
       >
-      <PageHeading heading={heading} subtitle={subtitle} />
+        <PageHeading heading={heading} subtitle={subtitle} />
         <ContactForm />
       </PageTemplate>
     );

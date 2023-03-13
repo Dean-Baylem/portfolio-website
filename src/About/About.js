@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import Footer from "../Footer/Footer";
 import PageTemplate from "../PageTemplate/PageTemplate";
 import "./About.css";
 import AboutNav from "./AboutNav/AboutNav";
@@ -21,17 +22,21 @@ const About = props => {
     }
 
     return (
-      <PageTemplate 
+      <PageTemplate
         src="https://img.freepik.com/free-photo/workplace-with-computer-coffee-cup_144627-33753.jpg?w=740&t=st=1678066535~exp=1678067135~hmac=f858a10482bb24e0f3459b51082507bfcab498c8482c2cc1614bc5b98a7bb174"
         alt="side-img"
         navLocations={navbarLinks}
+        changeLanguage={props.changeLanguage}
+        language={props.language}
       >
-        <AboutNav changeValue={handleClick} />
+        <AboutNav changeValue={handleClick} language={props.language} />
         <AboutTextBox
           title={currentTab.title}
           subtitle={currentTab.subtitle}
           body={currentTab.body}
+          bodyJP={currentTab.bodyJP}
           skills={skills}
+          language={props.language}
         />
       </PageTemplate>
     );

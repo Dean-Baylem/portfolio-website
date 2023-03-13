@@ -1,0 +1,42 @@
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #FFFF;
+    background-color: #2D2727;
+}
+
+.footer-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer-socials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 20%;
+}
+
+.footer-name {
+    padding: 0 5%;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+}
+
+.footer-desc p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+}
+
+.footer-name h5 {
+    font-family: "Spartan League", sans-serif;
+    font-size: 14px;
+}
