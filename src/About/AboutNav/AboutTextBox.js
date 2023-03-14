@@ -22,7 +22,7 @@ const AboutTextBox = props => {
           ) : (
             props.bodyJP.split("\n").map((text) => <p>{text}</p>)
           )}
-          <div className="skill-list">
+          <div className={props.skills === [] ? "none" : "skill-list"}>
             {props.skills.map((skill, index) => (
               <SkillTag key={index} skill={skill} />
             ))}

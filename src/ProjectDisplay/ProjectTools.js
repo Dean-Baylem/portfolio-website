@@ -7,7 +7,7 @@ const ProjectTools = props => {
                 <div className="subheading">
                     <h4>Tools Used</h4>
                 </div>
-                <div className="skill-list">
+                <div className="tool-list">
                     {props.project !== [] && props.project.skills.map((skill, index) => (
                         <SkillTag key={index} skill={skill} />
                     ))}

@@ -38,3 +38,30 @@ section {
     grid-template-columns: 1fr 1fr;
     text-align: center;
 }
+
+.tool-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1%;
+    row-gap: 4%;
+    text-align: center;
+}
+
+@media screen and (min-width: 1600px) {
+    .tool-list {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .tool-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .tool-list {
+        grid-template-columns: 1fr;
+        padding-bottom: 25%;
+    }
+}

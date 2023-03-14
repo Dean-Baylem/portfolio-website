@@ -6,7 +6,7 @@ import "./HomePage.css";
 const HomePage = props => {
 
     const titleEng = "Dean Baylem"
-    const titleJP = "ベイレムディーンです";
+    const titleJP = "ベイレム・ディーン";
     const subtitleEng = "Web Developer";
     const subtitleJP = "ウェブ開発者";
 

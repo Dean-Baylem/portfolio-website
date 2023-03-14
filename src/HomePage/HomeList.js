@@ -4,11 +4,11 @@ import HomeListItem from "./HomeListItem";
 const HomeList = props => {
 
     const list1Eng = "About";
-    const list1JP = "####";
+    const list1JP = "私について";
     const list2Eng = "Projects";
-    const list2JP = "####";
+    const list2JP = "プロジェクト";
     const list3Eng = "Contact";
-    const list3JP = "####";
+    const list3JP = "メール";
 
 
     return (

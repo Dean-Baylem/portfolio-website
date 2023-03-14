@@ -6,12 +6,25 @@
     padding: 0% 10% 0% 5%;
 }
 
+@media screen and (min-height: 900px) {
+    .about-text-box {
+        padding-bottom: 5%;
+    }
+}
+
 .skill-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 1%;
     row-gap: 4%;
     text-align: center;
+    padding-bottom: 20%;
+}
+
+@media screen and (min-height: 1350px) {
+    .skill-list {
+        padding-bottom: 30%
+    }
 }
 
 .skill-tag {
