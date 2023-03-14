@@ -45,6 +45,7 @@ const Projects = props => {
         changeLanguage={props.changeLanguage}
         navLocations={navbarLinks}
         src="images/project-img.jpg"
+        bannerLink="https://www.freepik.com/free-vector/set-computer-smartphone-technology-with-education-document_5602206.htm"
       >
         {showModal && (
           <ProjectModal close={modalToggle} project={modalProject} />
@@ -61,6 +62,12 @@ const Projects = props => {
                 src="https://img.freepik.com/free-vector/set-scenes-people-video-conference_24877-62802.jpg?w=996&t=st=1678102688~exp=1678103288~hmac=0af3cb469a3d35317bbd56d2f4ae6ef7d5adde1177334bdc26e0c60a14ebf2e0"
                 alt="work-img"
               />
+              <a
+                className="project-img-link"
+                href="https://www.freepik.com/free-vector/set-computer-smartphone-technology-with-education-document_5602206.htm"
+              >
+                Image by studiogstock on Freepik
+              </a>
             </div>
           ) : null}
           <div

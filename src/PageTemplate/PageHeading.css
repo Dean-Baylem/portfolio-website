@@ -2,3 +2,14 @@
     padding-left: 10%;
     padding-right: 10%;
 }
+
+.github-btn-block {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 1%;
+}
+
+.github-btn-block a {
+    text-decoration: none;
+}

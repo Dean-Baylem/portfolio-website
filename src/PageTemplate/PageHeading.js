@@ -9,7 +9,7 @@ const PageHeading = props => {
           <h2>{props.heading}</h2>
         </div>
         {props.subtitle && <p>{props.subtitle}</p>}
-        {props.github && <a href={props.githubLink}>GitHub</a>}
+        {props.github && <div className="github-btn-block"><a className="about-nav-btn" href={props.githubLink}>GitHub</a></div>}
         <hr></hr>
       </div>
     );

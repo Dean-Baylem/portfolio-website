@@ -19,6 +19,7 @@ const Contact = props => {
         alt="Contact-Me!"
         changeLanguage={props.changeLanguage}
         language={props.language}
+        bannerLink="https://www.freepik.com/free-photo/flat-lay-retro-telephone-receiver-with-chat-bubbles_11684286.htm"
       >
         <PageHeading heading={heading} subtitle={subtitle} />
         <ContactForm />

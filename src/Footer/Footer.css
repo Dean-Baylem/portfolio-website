@@ -1,5 +1,5 @@
 footer {
-    margin-top: 20%;
+    margin-top: 10%;
     padding-bottom: 2%;
     left: 0;
     bottom: 0;
@@ -15,7 +15,7 @@ footer {
 
 .footer-socials {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     padding: 0 20%;
 }
 
@@ -62,4 +62,24 @@ footer {
 .icon-link {
     text-decoration: none;
     place-self: center;
+}
+
+.icon-block {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 5%;
+}
+
+.banner-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+    .banner-link {
+        display: none;
+    }
+    .footer-socials {
+        display: inline-block;
+    }
 }

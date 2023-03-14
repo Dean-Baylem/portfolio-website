@@ -22,14 +22,19 @@ const Footer = props => {
             </div>
           </div>
           <div className="footer-socials">
-            <a className="icon-link" href="https://github.com/Dean-Baylem">
-              <FontAwesomeIcon className="icon" icon={faGithub} />
-            </a>
-            <a
-              className="icon-link"
-              href="https://www.linkedin.com/in/dean-baylem-a0b33821b/"
-            >
-              <FontAwesomeIcon className="icon" icon={faLinkedin} />
+            <div className="icon-block">
+              <a className="icon-link" href="https://github.com/Dean-Baylem">
+                <FontAwesomeIcon className="icon" icon={faGithub} />
+              </a>
+              <a
+                className="icon-link"
+                href="https://www.linkedin.com/in/dean-baylem-a0b33821b/"
+              >
+                <FontAwesomeIcon className="icon" icon={faLinkedin} />
+              </a>
+            </div>
+            <a className="banner-link" href={props.bannerLink}>
+              Banner Image by studiogstock on Freepik
             </a>
           </div>
         </div>

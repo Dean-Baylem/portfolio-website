@@ -17,7 +17,7 @@ const PageTemplate = props => {
             />
             <div className="main-body">
               {props.children}
-              <Footer language={props.language} />
+              <Footer bannerLink={props.bannerLink} language={props.language} />
             </div>
           </div>
         </div>
