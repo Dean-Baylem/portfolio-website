@@ -1,7 +1,7 @@
-.contact-form{
+.contact-form {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 2% 10%;
+    padding: 2% 10% 5% 10%;
 }
 
 @media screen and (min-height: 1200px) {

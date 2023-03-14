@@ -15,12 +15,10 @@ const PageTemplate = props => {
               changeLanguage={props.changeLanguage}
               navLocations={props.navLocations}
             />
-            <div className="main-body">
-              {props.children}
-              <Footer bannerLink={props.bannerLink} language={props.language} />
-            </div>
+            <div className="main-body">{props.children}</div>
           </div>
         </div>
+        <Footer bannerText={props.bannerText} bannerLink={props.bannerLink} language={props.language} />
       </React.Fragment>
     );
 }

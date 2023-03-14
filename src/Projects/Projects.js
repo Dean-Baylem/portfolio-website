@@ -46,6 +46,7 @@ const Projects = props => {
         navLocations={navbarLinks}
         src="images/project-img.jpg"
         bannerLink="https://www.freepik.com/free-vector/set-computer-smartphone-technology-with-education-document_5602206.htm"
+        bannerText="Image by studiogstock on Freepik"
       >
         {showModal && (
           <ProjectModal close={modalToggle} project={modalProject} />
@@ -55,7 +56,7 @@ const Projects = props => {
           handleClick={handleClick}
           projectLanguage={projectLanguage}
         />
-        <div>
+        <div className="project-main-body">
           {projectSelected === false ? (
             <div className="project-body-img">
               <img

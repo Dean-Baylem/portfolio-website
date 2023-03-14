@@ -34,7 +34,7 @@ const Footer = props => {
               </a>
             </div>
             <a className="banner-link" href={props.bannerLink}>
-              Banner Image by studiogstock on Freepik
+              {props.bannerText}
             </a>
           </div>
         </div>

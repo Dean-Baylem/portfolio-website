@@ -1,6 +1,4 @@
-.about-image {
-    width: 80%;
-}
+
 
 .about-text-box {
     padding: 0% 10% 0% 5%;
@@ -140,4 +138,10 @@
         row-gap: 5%;
         padding: 2%
     }
+}
+
+.about-image-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }

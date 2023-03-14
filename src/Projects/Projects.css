@@ -15,8 +15,8 @@
 }
 
 .project-card img {
-    height: -webkit-fill-available;
-    width: -webkit-fill-available;
+    height: inherit;
+    width: 100%;
     box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 1px 1px;
 }
 
@@ -95,4 +95,8 @@
     text-decoration: none;
     color: #000000;
     width:fit-content;
+}
+
+.project-main-body {
+    padding-bottom: 5%;
 }

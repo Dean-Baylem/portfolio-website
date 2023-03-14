@@ -2,6 +2,10 @@ section {
     padding: 0% 10%;
 }
 
+.links-section {
+    padding-bottom: 5%;
+}
+
 .project-details-content {
     padding-top: 2%;
 }
@@ -15,6 +19,7 @@ section {
 }
 
 .project-img-display {
+    text-align: center;
     height: 40vh;
 }
 
@@ -25,7 +30,6 @@ section {
 }
 
 .project-img-body {
-    max-width: -webkit-fill-available;
     height: 100%;
 }
 

@@ -29,6 +29,7 @@ const About = props => {
         changeLanguage={props.changeLanguage}
         language={props.language}
         bannerLink="https://www.freepik.com/free-photo/workplace-with-computer-coffee-cup_9184929.htm"
+        bannerText="Image by Racool_studio on Freepik"
       >
         <AboutNav changeValue={handleClick} language={props.language} />
         <AboutTextBox
