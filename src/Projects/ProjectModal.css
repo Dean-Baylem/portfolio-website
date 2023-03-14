@@ -54,7 +54,7 @@
     }
     .live {
         grid-template-columns: 1fr;
-        row-gap: 10%;
+        row-gap: 5%;
     }
     .not-live {
         grid-template-columns: 1fr;

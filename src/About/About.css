@@ -1,7 +1,7 @@
 
 
 .about-text-box {
-    padding: 0% 10% 0% 5%;
+    padding: 0% 10% 5% 5%;
 }
 
 @media screen and (min-height: 900px) {
@@ -89,15 +89,15 @@
     font-style: italic;
 }
 
-.about-image-box {
+.about-text-body {
     text-align: center;
 }
 
-.about-image-box p {
+.about-text-body p {
     text-align: left;
 }
 
-.about-image-box .skill-text {
+.about-text-body .skill-text {
     text-align: center;
 }
 
@@ -126,7 +126,7 @@
     .about-subtitle h5 {
         font-size: 1rem;
     }
-    .about-image-box p {
+    .about-text-body p {
         font-size: 12px;
 
     }

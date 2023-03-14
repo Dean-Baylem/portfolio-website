@@ -6,7 +6,7 @@ import "./PageTemplate.css";
 const PageTemplate = props => {
     return (
       <React.Fragment>
-        <div className="page-layout">
+        <div className={props.pageLayout}>
           <div className="image-section">
             <img src={props.src} alt={props.alt} className="side-img" />
           </div>

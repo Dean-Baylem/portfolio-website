@@ -51,6 +51,12 @@
     border: solid 1px #0066cc;
 }
 
+@media screen and (max-height: 400px) {
+    .nav-list-drawer {
+        top: 12%;
+    }
+}
+
 @media screen and (min-width: 750px) {
     .nav-list-menu {
     display: none;

@@ -21,6 +21,7 @@ const Contact = props => {
         language={props.language}
         bannerLink="https://www.freepik.com/free-photo/flat-lay-retro-telephone-receiver-with-chat-bubbles_11684286.htm"
         bannerText="Image by Freepik"
+        pageLayout="page-layout"
       >
         <PageHeading heading={heading} subtitle={subtitle} />
         <ContactForm />
