@@ -64,6 +64,25 @@
     }
 }
 
+@media screen and (max-width: 450px) {
+    .projects-box-js {
+        display: flex;
+        flex-direction: column;
+        padding: 1% 10% 2% 10%;
+    }
+    .project-card {
+        align-self: center;
+        height: 250px;
+        width: 250px;
+        padding-bottom: 4%;
+    }
+    .projects-box-python {
+        display: flex;
+        flex-direction: column;
+        padding: 1% 10% 2% 10%;
+    }
+}
+
 .projects-nav-btn-div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
