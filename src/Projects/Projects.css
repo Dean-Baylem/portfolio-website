@@ -62,6 +62,14 @@
     .project-body-img img {
         height: 40vh;
     }
+    .project-card img {
+        align-self: center;
+        height: 350px;
+        width: 350px;
+    }
+    .project-main-body {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -72,14 +80,27 @@
     }
     .project-card {
         align-self: center;
-        height: 250px;
-        width: 250px;
         padding-bottom: 4%;
     }
     .projects-box-python {
         display: flex;
         flex-direction: column;
         padding: 1% 10% 2% 10%;
+    }
+    .project-card img {
+        width: 250px;
+        height: 250px;
+    }
+    .about-nav-btn {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .project-card img {
+        width: 150px;
+        height: 150px;
     }
 }
 

@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import { NavLink } from "react-router-dom";
 import Backdrop from "./Backdrop";
 import "./NavBar.css";
+import NavDrawLinks from "./NavDrawLinks";
 import SideDrawer from "./SideDrawer";
 
 const NavBar = props => {
@@ -23,11 +24,7 @@ const NavBar = props => {
         {isOpen && <Backdrop onClick={closeDrawer} />}
         <SideDrawer show={isOpen} onClick={closeDrawer}>
           <div className="nav-list-drawer">
-            {navLocations.map((location, index) => (
-              <NavLink key={index} className="nav-item" to={"../" + location}>
-                {location}
-              </NavLink>
-            ))}
+          <NavDrawLinks />
           </div>
         </SideDrawer>
         <div className="nav-list">

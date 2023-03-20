@@ -5,11 +5,13 @@
 
 .page-layout {
     display: grid;
-    grid-template-columns: 2fr 4fr;
     height: 100%;
     min-height: 100vh;
 }
 
+.main-body {
+    padding: 0% 15%;
+}
 
 @media screen and (max-width: 1200px) {
     .page-layout {

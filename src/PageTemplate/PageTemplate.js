@@ -7,9 +7,6 @@ const PageTemplate = props => {
     return (
       <React.Fragment>
         <div className={props.pageLayout}>
-          <div className="image-section">
-            <img src={props.src} alt={props.alt} className="side-img" />
-          </div>
           <div className="template-body">
             <NavBar
               changeLanguage={props.changeLanguage}
