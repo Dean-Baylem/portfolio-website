@@ -5,7 +5,8 @@ import "./Projects.css";
 import ProjectCard from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
 import PageHeading from "../PageTemplate/PageHeading";
-import Footer from "../Footer/Footer";
+import { CSSTransition } from "react-transition-group";
+
 
 const Projects = props => {
 
@@ -47,9 +48,14 @@ const Projects = props => {
         src="images/project-img.jpg"
         pageLayout="page-layout"
       >
-        {showModal && (
-          <ProjectModal close={modalToggle} project={modalProject} />
-        )}
+          <CSSTransition
+            in={showModal}
+            timeout={200}
+            classNames="modal"
+            unmountOnExit
+          >
+            <ProjectModal close={modalToggle} project={modalProject} />
+          </CSSTransition>
         <PageHeading heading={heading} subtitle={subtitle} />
         <ProjectSwitchBoard
           handleClick={handleClick}
@@ -77,8 +83,9 @@ const Projects = props => {
                 : "projects-box-python"
             }
           >
-            {currentProjects.map((project) => (
+            {currentProjects.map((project, index) => (
               <ProjectCard
+                key={index}
                 onClick={modalToggle}
                 name={project.name}
                 src={project.coverImg}

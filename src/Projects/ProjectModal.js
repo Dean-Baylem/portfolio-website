@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import { NavLink } from "react-router-dom";
 import "./ProjectModal.css";
 
@@ -9,10 +10,9 @@ const ProjectModal = props => {
       props.close(project);
     }
 
-    return (
+    const content = (
       <div className="project-modal">
-        <div className="project-modal-box">
-          <div className="project-modal-header">
+        <div className="project-modal-box modalContent" onClick={(e) => e.stopPropagation()}>
             <div className="project-modal-title">
               <h4>{props.project.name}</h4>
               <hr></hr>
@@ -40,7 +40,11 @@ const ProjectModal = props => {
             </div>
           </div>
         </div>
-      </div>
+    );
+
+    return ReactDOM.createPortal(
+      content,
+      document.getElementById("project-modal-hook")
     );
 }
 

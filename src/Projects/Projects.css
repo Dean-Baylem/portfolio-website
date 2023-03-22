@@ -40,7 +40,10 @@
 
 @media screen and (max-width: 1200px) {
     .projects-box-python {
-        margin: 2% 10% 0% 10%;
+        margin: 2% 0% 0% 0%;
+    }
+    .projects-box-js {
+        margin: 2% 0% 0% 0%;
     }
 }
 
@@ -144,4 +147,17 @@
 .project-main-body {
     padding-bottom: 5%;
     margin-bottom: 10%;
+}
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 2000ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+    opacity: 0;
 }

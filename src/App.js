@@ -116,7 +116,7 @@ function App() {
           github: "https://github.com/Dean-Baylem/Gem_Generator",
           name: "Gem Generator",
           coverImg: "gem-id-full.jpg",
-          modalImg: "gem-id-saved.jpg",
+          modalImg: "gem-id-full.jpg",
           skills: ["Python", "Tkinter"],
           em: [2, 5],
           desc: "A Python Tkinter app to help generating random gems in TTRPG games.",
